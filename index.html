@@ -2,53 +2,64 @@
 
 <head>
     <meta charset="UTF-8">
-    
+    <link rel="shortcut icon" href="./public/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./public/styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alzheimer's visualization</title>
 </head>
 
 <body>
-    <script src="./public/jquery-3.6.1.min.js"></script>
-    <script src="./public/scripts.js" defer></script>
-    <div id="info-box"></div>
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <!-- Created with Inkscape (http://www.inkscape.org/) -->
+    <div id="top">
+        <div id="top-header"></div>
+            <img src="./public/brain-512x512.png" alt="Exterior view of the brain, pink color simplistic" srcset="">
+            <h1>Alzhimer's Visualization</h1>
+            <div id="header">
+                <h3>External view</h3>
+                <a href="https://github.com/TramHammer/alz-visual">Source Code</a>
+                </div>
+        </div>
+    </div>
+    <div id="brain-div">
+        <script src="./public/jquery-3.6.1.min.js"></script>
+        <script src="./public/scripts.js" defer></script>
+        <div id="info-box"></div>
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-    <svg id="brainmap" preserveAspectRatio="xMinYMin meet" width="210mm" height="297mm" viewBox="0 0 210 297"
-        version="1.1" inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)" sodipodi:docname="ex.svg"
-        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
-        xmlns:svg="http://www.w3.org/2000/svg">
-        <sodipodi:namedview id="namedview756" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
-            inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"
-            inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" showgrid="false" inkscape:zoom="1.0544998"
-            inkscape:cx="520.15184" inkscape:cy="633.47572" inkscape:window-width="1920" inkscape:window-height="1017"
-            inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1"
-            inkscape:current-layer="layer1" />
-        <g id="g1151">
-            <g transform="matrix(0.20272675,0,0,0.20272675,4.6454757,68.219981)">
-                <path id="PL" data-info="<div>State: Hawaii</div><div>Capital: Honolulu</div>" fill="#fcfb98"
-                    d="m 564,54 c 13,-2 26,-1 38,6 38,-7 66,-1 83,18 14,-3 29,1 43,11 39,17 67,39 89,64 36,15 50,33 52,53 19,14 31,31 39,50 L 798,413 455,370 352,209 Z" />
+        <svg id="brainmap" preserveAspectRatio="xMinYMin meet" width="210mm" height="297mm" viewBox="0 0 210 297"
+            version="1.1" inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)" sodipodi:docname="ex.svg"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+            <sodipodi:namedview id="namedview756" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
+                inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"
+                inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" showgrid="false" inkscape:zoom="1.0544998"
+                inkscape:cx="520.15184" inkscape:cy="633.47572" inkscape:window-width="1920" inkscape:window-height="1017"
+                inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1"
+                inkscape:current-layer="layer1" />
+            <g id="g1151">
+                <g transform="matrix(0.20272675,0,0,0.20272675,4.6454757,68.219981)">
+                    <path id="PL" data-info="<div>Parietal Lobe</div><div>Damage to the parietal lobe causes issues with language processing skills such as reading and writing. May also have issues with skilled movements and gestures.</div>" fill="#fcfb98" stroke="#fcfb98"
+                        d="m 564,54 c 13,-2 26,-1 38,6 38,-7 66,-1 83,18 14,-3 29,1 43,11 39,17 67,39 89,64 36,15 50,33 52,53 19,14 31,31 39,50 L 798,413 455,370 352,209 Z" />
+                </g>
+                <g transform="matrix(0.20272675,0,0,0.20272675,4.6454757,68.219981)">
+                    <path id="FL" data-info="<div>Frontal Lobe</div><div>Damage to the frontal lobe causes issues with judgment, behavior and intelligence.</div>" fill="#b4d8ec" stroke="#b4d8ec"
+                        d="m 573,52 -15,38 c -64,5 -78,25 -58,57 12,14 -10,26 -16,42 -6,20 -13,41 -23,62 0,54 -31,50 -28,69 l 22,29 -191,199 C 169,563 118,555 104,528 75,518 57,486 51,432 36,416 35,401 40,385 c -2,-6 -3,-12 1,-18 -8,-26 -4,-40 1,-53 2,-20 12,-37 27,-52 -1,-25 14,-38 34,-46 16,-51 88,-86 117,-94 19,-17 45,-27 77,-31 16,-7 31,-12 46,-14 28,-18 60,-21 92,-21 26,-9 53,-12 81,-6 z" />
+                </g>
+                <g transform="matrix(0.20272675,0,0,0.20272675,4.6454757,68.219981)">
+                    <path id="TL" data-info="<div>Temporal Lobe</div><div>Damage to the temporal lobe causes issues with recalling and creating new memories. Alzheimer's typically begin in this lobe and directly affect the hippocampus.
+                    </div>" fill="#b6cf9d" stroke="#b6cf9d"
+                        d="m 564,312 266,42 c 39,46 78,92 116,138 -28,27 -66,31 -107,25 -17,9 -43,14 -82,0 -15,9 -30,15 -45,20 -24,13 -49,17 -75,17 -24,4 -45,7 -54,0 -15,12 -28,17 -39,20 -17,10 -31,13 -45,16 -12,29 -41,41 -81,41 -27,12 -54,13 -82,-12 -20,-10 -39,-22 -49,-46 -7,-8 -13,-15 -19,-23 -3,-28 4,-53 25,-74 20,-11 23,-40 35,-60 23,-27 60,-38 99,-46 17,-17 37,-29 67,-27 17,-17 37,-32 70,-31 z" />
+                </g>
+                <g transform="matrix(0.20272675,0,0,0.20272675,4.6454757,68.219981)">
+                    <path id="OL" data-info="<div>Occipital Lobe</div><div>Rarely affected but damage to the occipital lobe may cause symptoms such as not being able to recognize items, people or objects.
+                    </div>" fill="#f7a6b6" stroke="#f7a6b6"
+                        d="m 906,255 c -29,26 -48,42 -73,72 -7,25 -3,50 7,75 0.0712,9.7227 -21.46081,18.0795 -26.87713,27.47625 -3.07324,5.33175 -17.41927,44.70616 -23.98828,48.24916 -6.00733,3.24006 -11.61249,3.68966 -13.44478,9.80025 -0.22505,0.75054 -11.43717,11.00398 -12.9275,12.00546 -9.45919,6.35645 -13.84,6.04707 -12.23856,8.5322 2.32615,3.60974 3.16585,5.9875 6.58798,7.41601 3.42214,1.42852 30.32142,8.8332 34.30371,8.3266 4.06809,-0.51753 19.74199,1.27118 23.67569,1.02461 3.86003,-0.24194 9.1993,-2.09306 12.35817,-2.92937 4.00987,-1.06161 9.69306,-5.98194 11.91162,-5.8475 16.51772,1.00093 35.6613,1.33924 58.00849,-1.45406 C 931.68151,505.74521 916.9636,510.40581 948,493 c 10,-12 18,-28 26,-56 7,-11 6,-29 3,-46 6,-24 -5,-33 -20,-50 -4,-15 -9,-34 -27,-49 1,-10 -4,-26 -24,-37 z" />
+                </g>
             </g>
-            <g transform="matrix(0.20272675,0,0,0.20272675,4.6454757,68.219981)">
-                <path id="FL" data-info="<div>State: Hawaii</div><div>Capital: Honolulu</div>" fill="#b4d8ec"
-                    d="m 573,52 -15,38 c -64,5 -78,25 -58,57 12,14 -10,26 -16,42 -6,20 -13,41 -23,62 0,54 -31,50 -28,69 l 22,29 -191,199 C 169,563 118,555 104,528 75,518 57,486 51,432 36,416 35,401 40,385 c -2,-6 -3,-12 1,-18 -8,-26 -4,-40 1,-53 2,-20 12,-37 27,-52 -1,-25 14,-38 34,-46 16,-51 88,-86 117,-94 19,-17 45,-27 77,-31 16,-7 31,-12 46,-14 28,-18 60,-21 92,-21 26,-9 53,-12 81,-6 z" />
-            </g>
-            <g transform="matrix(0.20272675,0,0,0.20272675,4.6454757,68.219981)">
-                <path id="TL" fill="#ffffff" data-info="<div>State: Hawaii</div><div>Capital: Honolulu</div>"
-                    d="m 564,312 266,42 c 39,46 78,92 116,138 -28,27 -66,31 -107,25 -17,9 -43,14 -82,0 -15,9 -30,15 -45,20 -24,13 -49,17 -75,17 -24,4 -45,7 -54,0 -15,12 -28,17 -39,20 -17,10 -31,13 -45,16 -12,29 -41,41 -81,41 -27,12 -54,13 -82,-12 -20,-10 -39,-22 -49,-46 -7,-8 -13,-15 -19,-23 -3,-28 4,-53 25,-74 20,-11 23,-40 35,-60 23,-27 60,-38 99,-46 17,-17 37,-29 67,-27 17,-17 37,-32 70,-31 z" />
-            </g>
-            <g transform="matrix(0.20272675,0,0,0.20272675,4.6454757,68.219981)">
-                <path id="OL" data-info="<div>State: Hawaii</div><div>Capital: Honolulu</div>" fill="#f7a6b6"
-                    d="m 906,255 c -29,26 -48,42 -73,72 -7,25 -3,50 7,75 0.0712,9.7227 -21.46081,18.0795 -26.87713,27.47625 -3.07324,5.33175 -17.41927,44.70616 -23.98828,48.24916 -6.00733,3.24006 -11.61249,3.68966 -13.44478,9.80025 -0.22505,0.75054 -11.43717,11.00398 -12.9275,12.00546 -9.45919,6.35645 -13.84,6.04707 -12.23856,8.5322 2.32615,3.60974 3.16585,5.9875 6.58798,7.41601 3.42214,1.42852 30.32142,8.8332 34.30371,8.3266 4.06809,-0.51753 19.74199,1.27118 23.67569,1.02461 3.86003,-0.24194 9.1993,-2.09306 12.35817,-2.92937 4.00987,-1.06161 9.69306,-5.98194 11.91162,-5.8475 16.51772,1.00093 35.6613,1.33924 58.00849,-1.45406 C 931.68151,505.74521 916.9636,510.40581 948,493 c 10,-12 18,-28 26,-56 7,-11 6,-29 3,-46 6,-24 -5,-33 -20,-50 -4,-15 -9,-34 -27,-49 1,-10 -4,-26 -24,-37 z" />
-            </g>
-            <path fill="none" stroke="#000000" stroke-width="0.810909"
-                d="m 93.034338,79.57268 c -6.28453,-0.405454 -13.379965,0.810907 -19.461768,4.257262 -3.040901,0.202726 -6.284529,1.82454 -8.919977,3.040901 -5.879075,0.405453 -10.947244,2.432721 -15.407232,5.879075 -3.851808,1.216361 -7.906343,2.635448 -11.352698,5.676349 -6.487256,3.851813 -10.744518,8.311793 -12.771785,13.785423 -4.257262,1.41908 -6.487256,4.66271 -6.487256,9.1227 -3.040901,2.63545 -5.068169,6.0818 -5.473622,10.54179 -1.621814,3.44636 -1.419088,6.89271 -0.405454,10.33907 -0.202727,1.21636 -1.013634,2.63544 0,3.8518 -1.013634,2.23 -0.60818,4.45999 0.405454,6.68999 0.60818,0 0.810906,2.63544 1.621813,3.0409 0.405454,5.87908 1.824541,9.73088 3.649082,12.56906 2.027268,3.24363 4.054535,6.0818 7.298163,6.8927 3.243628,6.48726 16.623594,6.08181 32.841733,3.85182 1.419087,2.22999 2.838174,3.8518 4.257262,5.47362 2.229994,4.66271 5.879076,7.50089 10.339064,9.32542 3.649081,3.24363 8.10907,5.47363 16.420871,2.23001 7.90634,-0.40546 14.190872,-2.23001 16.218142,-8.3118 2.02726,-0.20273 4.66271,-1.21636 8.91997,-3.24363 3.0409,-0.60818 5.47362,-2.23 7.70362,-4.05454 2.22999,1.62182 6.89271,0.81091 11.55542,0 7.29817,-0.40545 12.36634,-1.41908 14.79906,-3.44635 3.44635,-1.01364 6.8927,-2.02727 9.52816,-4.05454 6.08179,2.02727 11.75815,2.83818 16.42086,0 13.58269,1.41909 24.32721,-1.41908 27.16538,-16.01541 2.23,-2.43272 1.62182,-6.0818 0.60819,-9.73089 2.22999,-3.64908 -0.81091,-6.68998 -3.85181,-9.93361 -0.40545,-4.25726 -2.43272,-7.29816 -5.47363,-9.93361 0.40546,-2.83817 -0.60818,-5.27089 -4.66271,-7.29816 -1.62182,-4.86544 -4.45999,-7.90634 -7.90635,-10.13634 0,-5.06817 -4.25726,-8.31179 -10.54178,-10.744516 -4.86545,-5.879075 -10.94725,-10.136337 -18.04268,-13.177238 -2.83818,-2.229994 -5.67635,-2.432721 -8.51453,-2.027268 -3.24363,-4.054535 -8.91997,-5.068168 -16.6236,-3.649081 -2.02726,-1.419087 -4.25725,-1.419087 -6.28452,-1.419087 -4.66272,-0.405454 -8.71725,-0.608181 -12.16361,-0.608181 -5.87907,-1.21636 -10.744512,-0.405453 -15.407232,1.216361 z"
-                class="fil5" id="path172" style="fill:none" />
-        </g>
-    </svg>
-    <a href="https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals" target="_blank" style="position: absolute; bottom: 0px; right: 0px; text-decoration: none; color: #8a8787">Tutorial is on Website Beaver</a>
+        </svg>
+    </div>
 </body>
 
 </html>
