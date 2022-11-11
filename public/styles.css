@@ -1,32 +1,91 @@
-#us-map{
+body {
+    margin: 0;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#top {
+    background-color: #ffffff;
+    margin: 0;
+    position: absolute;
+    padding: 1rem 1rem;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
+    box-shadow: 0 0 10px grey;
+    float: left;
+}
+
+
+#top-header img, h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1rem;
+    padding: 0;
+    position: relative;
+}
+
+#top img {
+    width: 3rem;
+    height: auto;
+}
+
+#top::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#header h3 {
+    float: left;
+    text-decoration: none;
+    margin: 0;
+}
+
+#header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#header a {
+    float: right;
+    text-decoration: none;
+    margin: 0;
+}
+
+#brain-map {
     display: block;
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 20%;
     height: 100%;
-  }
-  path:hover, circle:hover {
+}
+
+#brain-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+path:hover, circle:hover {
     stroke: #002868 !important;
-    stroke-width:2px;
+    stroke-width: .06rem;
     stroke-linejoin: round;
     fill: #002868 !important;
     cursor: pointer;
-  }
-  #path67 {
-    fill: none !important;
-    stroke: #A9A9A9 !important;
-    cursor: default;
-  }
-  #info-box {
+}
+
+#info-box {
     display: none;
     position: absolute;
     top: 0px;
     left: 0px;
     z-index: 1;
     background-color: #ffffff;
-    border: 2px solid #BF0A30;
-    border-radius: 5px;
-    padding: 5px;
+    border: .13rem solid #838383;
+    border-radius: .313rem;
+    padding: .313rem;
     font-family: arial;
-  }
+}
