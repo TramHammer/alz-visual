@@ -1,21 +1,24 @@
-#brainmap {
+#us-map{
     display: block;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-path:hover, circle:hover  {
+  }
+  path:hover, circle:hover {
     stroke: #002868 !important;
     stroke-width:2px;
     stroke-linejoin: round;
     fill: #002868 !important;
     cursor: pointer;
-}
-
-#info-box {
+  }
+  #path67 {
+    fill: none !important;
+    stroke: #A9A9A9 !important;
+    cursor: default;
+  }
+  #info-box {
     display: none;
     position: absolute;
     top: 0px;
@@ -26,4 +29,4 @@ path:hover, circle:hover  {
     border-radius: 5px;
     padding: 5px;
     font-family: arial;
-}
+  }
