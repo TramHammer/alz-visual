@@ -36,6 +36,10 @@ body {
     clear: both;
 }
 
+#header {
+    text-decoration: none;
+}
+
 #header h3 {
     float: left;
     text-decoration: none;
@@ -50,7 +54,6 @@ body {
 
 #header a {
     float: right;
-    text-decoration: none;
     margin: 0;
 }
 
